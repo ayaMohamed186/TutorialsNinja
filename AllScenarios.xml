@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="Register New User">
+        <classes>
+            <class name="testcase.TC01_RegisterNewUser">
+                <methods>
+                    <include name="registerNewUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login system">
+        <classes>
+            <class name="testcase.TC02_Login">
+                <methods>
+                    <include name="loginWithRegisterUser_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Create order">
+        <classes>
+            <class name="testcase.TC03_CreateOrder">
+                <methods>
+                    <include name="createOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
